@@ -24,7 +24,7 @@ jobs:
       # Utiliser l'outil cURL pour récupérer le fichier
       # en spécifiant l'URL ftp et les identifiants de connexion
       # à partir des secrets stockés
-      run: curl ftp://${{ env.FTP_LOGIN }}:${{ env.FTP_PASSWORD }}@kromatic.fr/file.txt -o file.txt
+      run: curl ftp://${{ env.FTP_LOGIN }}:${{ env.FTP_PASSWORD }}@ftp.ymzk1123.odns.fr/file.txt -o file.txt
     - name: Stocker le fichier en local
       # Utiliser l'action "upload-artifact" pour stocker le fichier
       # en local dans le dépôt github
