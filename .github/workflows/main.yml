@@ -32,3 +32,12 @@ jobs:
       with:
         name: file
         path: file.txt
+  
+  
+    - name: Ajout du fichier au dépôt
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add file.txt
+        git commit -m "Ajout du fichier téléchargé depuis FTP"
+
