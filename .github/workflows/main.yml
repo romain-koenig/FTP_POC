@@ -1,9 +1,6 @@
 name: FTP Sync
 
 on:
-  # L'action est lancée chaque matin à 7h00
-  schedule:
-    - cron: '0 7 * * *'
   # L'action peut également être lancée manuellement à tout moment
   workflow_dispatch:
 
